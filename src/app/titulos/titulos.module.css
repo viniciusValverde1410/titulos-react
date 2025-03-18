@@ -9,8 +9,6 @@
     background-color: #f8f8f8; /* Fundo claro para o conteúdo principal */
   }
   
- 
-  
   @media (max-width: 768px) {
     .trophy {
       width: 45%;
