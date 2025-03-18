@@ -8,203 +8,63 @@ export default function Titulos() {
   return (
     <div className={styles.container}>
 
-    <Header />
+      <Header />
 
       <main className={styles.main}>
         <section className={styles.featured}>
           <h2>Conquistas Principais</h2>
           <div className={styles.featuredTrophies}>
-
-            <Card ano={2012} capa={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"} detalhes={"Corinthias 1 X 0 Chelsea"} textoAlt={"Imagem do troféu do mundial de clubes de 2012"} titulo={"Mundial de clubes"} />
-
-           
-
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src=""
-                  alt="Troféu da Copa Libertadores da América 2012"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Copa Libertadores da América</h3>
-                <p className={styles.year}>2012</p>
-                <p className={styles.details}>Corinthians 2 x 0 Boca Juniors</p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu da Copa Libertadores da América 2000"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Mundial de Clubes da FIFA</h3>
-                <p className={styles.year}>2000</p>
-                <p className={styles.details}>Corinthians 0(4) x 0(3) Vasco</p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
+            <Card ano={2012} capa={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"} detalhes={"Corinthias 1 X 0 Chelsea"} textoAlt={"Imagem do troféu do mundial de clubes de 2012"} titulo={"Mundial de clubes "} />
+            <Card ano={2012} capa={"https://cdn.meutimao.com.br/fotos-do-corinthians/w614/2020/05/27/taca_libertadores_6oik.jpg"} detalhes={"Corinthians 2 x 0 Boca Juniors"} textoAlt={"Imagem do troféu da Copa Libertadores da América 2012"} titulo={"Copa Libertadores da América "} />
+            <Card ano={2000} capa={"https://live.staticflickr.com/1233/1368635733_c03e1a5e96_z.jpg"} detalhes={"Corinthians 0(4) x 0(3) Vasco"} textoAlt={"Imagem do troféu da Copa Libertadores da América 2000"} titulo={"Mundial de clubes"} />
           </div>
         </section>
 
         <section className={styles.newTrophies}>
           <h2>Campeonatos Brasileiros</h2>
           <div className={styles.trophiesGrid}>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu do Campeonato Brasileiro 2017"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Campeonato Brasileiro</h3>
-                <p className={styles.year}>2017</p>
-                <p className={styles.details}>7º título brasileiro</p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu do Campeonato Brasileiro 2015"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Campeonato Brasileiro</h3>
-                <p className={styles.year}>2015</p>
-                <p className={styles.details}>6º título brasileiro</p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu do Campeonato Brasileiro 2011"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Campeonato Brasileiro</h3>
-                <p className={styles.year}>2011</p>
-                <p className={styles.details}>5º título brasileiro</p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
+
+            <Card ano={2017} capa={"https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2017/05/13105454/ta%C3%A7a-campeonato-brasileiro.jpeg"}
+              detalhes={"7º título brasileiro"} textoAlt={"Imagem do troféu do campeonato brasileiro de 2017"} titulo={"Campeonato Brasileiro"} />
+
+            <Card ano={2015} capa={"https://s2.glbimg.com/XDy3QbqqWkC6ZYfmelsOQU0YnM0=/560x350/e.glbimg.com/og/ed/f/original/2015/11/04/20150922181217_1.jpeg"}
+              detalhes={"6º título brasileiro"} textoAlt={"Imagem do troféu do Campeonato Brasileiro 2015"} titulo={"Campeonato Brasileiro"} />
+
+            <Card ano={2011} capa={"data:image/jpeg;base64,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"}
+              detalhes={"5º título brasileiro"} textoAlt={"Imagem do troféu do Campeonato Brasileiro 2011"} titulo={"Campeonato Brasileiro"} />
+
           </div>
         </section>
 
         <section className={styles.promo}>
           <h2>Campeonatos Estaduais</h2>
           <div className={styles.trophiesGrid}>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu do Campeonato Paulista 2023"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Campeonato Paulista</h3>
-                <p className={styles.year}>2023</p>
-                <p className={styles.details}>
-                  <span className={styles.recordTitle}>
-                    30º título estadual
-                  </span>
-                </p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu do Campeonato Paulista 2019"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Campeonato Paulista</h3>
-                <p className={styles.year}>2019</p>
-                <p className={styles.details}>
-                  <span className={styles.recordTitle}>
-                    29º título estadual
-                  </span>
-                </p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu do Campeonato Paulista 2018"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Campeonato Paulista</h3>
-                <p className={styles.year}>2018</p>
-                <p className={styles.details}>
-                  <span className={styles.recordTitle}>
-                    28º título estadual
-                  </span>
-                </p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
+
+            < Card ano={2019} capa={"https://conteudo.imguol.com.br/c/esporte/93/2019/03/28/trofeu-do-campeonato-paulista-de-2019-1553785004249_v2_450x450.jpg"}
+              detalhes={"30º título estadual"} textoAlt={"Imagem do troféu do Campeonato Paulista 2019"} titulo={"Campeonato Paulista"} />
+
+            < Card ano={2018} capa={"https://conteudo.imguol.com.br/c/esporte/93/2019/03/28/trofeu-do-campeonato-paulista-de-2019-1553785004249_v2_450x450.jpg"}
+              detalhes={"29º título estadual"} textoAlt={"Imagem do troféu do Campeonato Paulista 2018"} titulo={"Campeonato Paulista"} />
+
+            < Card ano={2017} capa={"https://conteudo.imguol.com.br/c/esporte/93/2019/03/28/trofeu-do-campeonato-paulista-de-2019-1553785004249_v2_450x450.jpg"}
+              detalhes={"28º título estadual"} textoAlt={"Imagem do troféu do Campeonato Paulista 2017"} titulo={"Campeonato Paulista"} />
+
           </div>
         </section>
 
         <section className={styles.otherTrophies}>
           <h2>Outras Conquistas</h2>
           <div className={styles.trophiesGrid}>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu da Copa do Brasil 2009"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Copa do Brasil</h3>
-                <p className={styles.year}>2009</p>
-                <p className={styles.details}>
-                  Corinthians 2 x 0 Internacional
-                </p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu da Recopa Sul-Americana 2013"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Recopa Sul-Americana</h3>
-                <p className={styles.year}>2013</p>
-                <p className={styles.details}>Corinthians 3 x 1 São Paulo</p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu da Copa do Brasil 2002"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Copa do Brasil</h3>
-                <p className={styles.year}>2002</p>
-                <p className={styles.details}>Corinthians 3 x 2 Brasiliense</p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
+
+            <Card ano={2009} capa={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"}
+              detalhes={"Corinthians 2 x 0 Internacional"} textoAlt={"Troféu da Copa do Brasil 2009"} titulo={"Copa do Brasil"} />
+
+            <Card ano={2013} capa={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"}
+              detalhes={"Corinthians 3 x 1 São Paulo"} textoAlt={"Troféu da Recopa Sul-Americana 2013"} titulo={"Recopa Sul-Americana"} />
+
+            <Card ano={2002} capa={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"}
+              detalhes={"Corinthians 3 x 2 Brasiliense"} textoAlt={"Troféu da Copa do Brasil 2002"} titulo={"Copa do Brasil"} />
+
           </div>
         </section>
       </main>
