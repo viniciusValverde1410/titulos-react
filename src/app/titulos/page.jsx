@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./titulos.module.css";
 import Header from "../components/header";
+import Card from "../components/cards";
 import Footer from "../components/footer";
 
-const CorinthiansTrophiesPage = () => {
+export default function Titulos() {
   return (
     <div className={styles.container}>
 
@@ -13,24 +14,15 @@ const CorinthiansTrophiesPage = () => {
         <section className={styles.featured}>
           <h2>Conquistas Principais</h2>
           <div className={styles.featuredTrophies}>
+
+            <Card ano={2012} capa={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"} detalhes={"Corinthias 1 X 0 Chelsea"} textoAlt={"Imagem do troféu do mundial de clubes de 2012"} titulo={"Mundial de clubes"} />
+
+           
+
             <div className={styles.trophy}>
               <div className={styles.trophyCover}>
                 <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
-                  alt="Troféu do Mundial de Clubes da FIFA 2012"
-                />
-              </div>
-              <div className={styles.trophyInfo}>
-                <h3>Mundial de Clubes da FIFA</h3>
-                <p className={styles.year}>2012</p>
-                <p className={styles.details}>Corinthians 1 x 0 Chelsea</p>
-                <button className={styles.detailsButton}>Ver Detalhes</button>
-              </div>
-            </div>
-            <div className={styles.trophy}>
-              <div className={styles.trophyCover}>
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/FIFA_CLUB_WORLDCUP.jpg/450px-FIFA_CLUB_WORLDCUP.jpg"
+                  src=""
                   alt="Troféu da Copa Libertadores da América 2012"
                 />
               </div>
@@ -223,4 +215,3 @@ const CorinthiansTrophiesPage = () => {
   );
 };
 
-export default CorinthiansTrophiesPage;
